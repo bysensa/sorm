@@ -134,7 +134,6 @@ where
         get_many::<P>(response)
     }
 
-    ///
     fn validate_fields_to_fetch(linked_fields_to_fetch: &[Field]) -> SurrealOrmResult<Vec<String>> {
         let result = linked_fields_to_fetch
             .iter()
@@ -321,7 +320,6 @@ where
     /// Internal method to set the surrealdb return type of the statement.
     fn set_return_type(self, return_type: ReturnType) -> Self;
 
-    ///
     fn get_return_type(&self) -> ReturnType;
 }
 

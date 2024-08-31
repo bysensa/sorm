@@ -16,9 +16,7 @@ use surrealdb::sql;
 #[derive(Debug, Clone)]
 pub struct Operation {
     pub query_string: String,
-
     pub bindings: BindingsList,
-
     pub errors: ErrorList,
 }
 
@@ -1230,7 +1228,7 @@ pub trait Operatable: Sized + Parametric + Buildable + Erroneous {
     /// # Arguments
     ///
     /// * `terms` - The terms to search for in the full-text indexed field.
-    ///  can also be a `Field` or `Param`.
+    /// can also be a `Field` or `Param`.
     ///
     /// # Example
     ///
@@ -1255,9 +1253,9 @@ pub trait Operatable: Sized + Parametric + Buildable + Erroneous {
     /// # Arguments
     ///
     /// * `reference` - Optional. The specific reference or dictionary against which to perform the full-text search.
-    ///  can also be a `Field` or `Param`.
+    /// can also be a `Field` or `Param`.
     /// * `terms` - The terms to search for in the full-text indexed field.
-    ///  can also be a `Field` or `Param`.
+    /// can also be a `Field` or `Param`.
     ///
     /// # Example
     ///

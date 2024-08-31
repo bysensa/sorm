@@ -78,7 +78,6 @@ pub trait Model: Sized {
         Thing::from((Self::table().to_string(), id.into()))
     }
 
-    ///
     fn create_id<V: Into<sql::Id>>(id: V) -> SurrealId<Self, V> {
         SurrealId::new(id)
     }
@@ -301,13 +300,11 @@ pub trait Object: Serialize + SchemaGetter {
     // fn schema() -> Self::Schema;
 }
 
-///
 pub trait SchemaGetter {
-    ///
     type Schema;
-    ///
+
     fn schema() -> Self::Schema;
-    ///
+
     fn schema_prefixed(prefix: impl Into<ValueLike>) -> Self::Schema;
 }
 

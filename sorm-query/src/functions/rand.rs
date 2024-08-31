@@ -598,9 +598,8 @@ pub mod uuid {
 
 #[cfg(test)]
 mod tests {
-    use crate::{arr, Buildable, Field, NumberLike, ToRaw};
-
     use crate::functions::rand;
+    use crate::{arr, Buildable, Field, NumberLike, ToRaw};
 
     #[test]
     fn test_rand_fn() {
@@ -710,7 +709,7 @@ mod tests {
     // Test Guid
     #[test]
     fn test_rand_guid_function_empty() {
-        let result = rand::guid_fn(None);
+        let result = rand::guid_fn(None as Option<NumberLike>);
         assert_eq!(result.fine_tune_params(), "rand::guid()");
         assert_eq!(result.to_raw().build(), "rand::guid()");
     }
