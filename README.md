@@ -1,4 +1,4 @@
-[![surreal-orm](https://github.com/Oyelowo/surreal-orm/actions/workflows/rust.yaml/badge.svg)](https://github.com/Oyelowo/surreal-orm/actions/workflows/rust.yaml)
+[![sorm](https://github.com/Oyelowo/sorm/actions/workflows/rust.yaml/badge.svg)](https://github.com/Oyelowo/sorm/actions/workflows/rust.yaml)
 [![cleanup old images](https://github.com/Oyelowo/modern-distributed-app-template/actions/workflows/delete-old-images.yaml/badge.svg)](https://github.com/Oyelowo/modern-distributed-app-template/actions/workflows/delete-old-images.yaml)
 
 ## Introduction

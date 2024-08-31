@@ -1,0 +1,32 @@
+[package]
+name = "sorm-derive"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+description = { workspace = true }
+documentation = { workspace = true }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-macro2 = { workspace = true }
+proc-macro-crate = { workspace = true }
+syn = { workspace = true }
+quote = { workspace = true }
+darling = { workspace = true }
+convert_case = { workspace = true }
+strum = { workspace = true }
+strum_macros = { workspace = true }
+thiserror = { workspace = true }
+paste = { workspace = true }
+
+
+serde = { workspace = true }
+sorm-query = { workspace = true }
+sorm-derive-helpers = { workspace = true }
+sorm-migrator = { workspace = true }
+sorm-macros-helpers = { workspace = true }
+
+[lib]
+proc-macro = true
+doctest = false

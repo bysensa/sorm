@@ -1,0 +1,20 @@
+[package]
+name = "sorm"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+description = { workspace = true }
+documentation = { workspace = true }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sorm-derive = { workspace = true }
+sorm-query-macros = { workspace = true }
+sorm-migrator-macros = { workspace = true }
+sorm-query = { workspace = true }
+sorm-migrator = { workspace = true }
+serde = { workspace = true }
+
+[lib]
+doctest = false

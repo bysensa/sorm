@@ -2,22 +2,22 @@
 resolver = "2"
 
 members = [
-  "orm",
-  "query-builder",
-  "query-builder-macros",
-  "migrator",
-  "migrator-macros",
-  "migrator-tests",
-  "proc-macros-helpers",
-  "derive",
-  "derive_helpers",
-  "derive_tests",
-  "models",
-  "orm-tests",
-  "orm-compile-tests",
-  "examples/migration-filebased",
-  "examples/migration-embedded",
-  "examples/migration-cli", "derive_tests",
+    "sorm",
+    "sorm-query",
+    "sorm-query-macros",
+    "sorm-migrator",
+    "sorm-migrator-macros",
+    "sorm-migrator-tests",
+    "sorm-macros-helpers",
+    "sorm-derive",
+    "sorm-derive_helpers",
+    "sorm-models",
+    "sorm-tests",
+    "sorm-compile-tests",
+    "sorm-examples/migration-filebased",
+    "sorm-examples/migration-embedded",
+    "sorm-examples/migration-cli",
+    "sorm-examples/ch02-data-model/listing-01-alien",
 ]
 
 [workspace.package]
@@ -29,38 +29,38 @@ documentation = "https://codebreather.com/oyelowo"
 
 
 [workspace.dependencies]
-surreal-derive = { path = "derive" }
-surreal-derive-helpers = { path = "derive_helpers" }
-surreal-orm = { path = "orm" }
-surreal-query-builder = { path = "query-builder" }
-proc-macros-helpers = { path = "proc-macros-helpers" }
-query-builder-macros = { path = "query-builder-macros" }
-migrator = { path = "migrator" }
-migrator-macros = { path = "migrator-macros" }
-migrator-tests = { path = "migrator-tests" }
-surreal-models = { path = "models" }
-migration-filebased = { path = "examples/migration-filebased" }
-migration-embedded = { path = "examples/migration-embedded" }
-migration-cli = { path = "examples/migration-cli" }
-migration-simple = { path = "examples/migration-simple" }
+sorm-derive = { path = "sorm-derive" }
+sorm-derive-helpers = { path = "sorm-derive_helpers" }
+sorm = { path = "sorm" }
+sorm-query = { path = "sorm-query" }
+sorm-macros-helpers = { path = "sorm-macros-helpers" }
+sorm-query-macros = { path = "sorm-query-macros" }
+sorm-migrator = { path = "sorm-migrator" }
+sorm-migrator-macros = { path = "sorm-migrator-macros" }
+sorm-migrator-tests = { path = "sorm-migrator-tests" }
+sorm-models = { path = "sorm-models" }
+migration-filebased = { path = "sorm-examples/migration-filebased" }
+migration-embedded = { path = "sorm-examples/migration-embedded" }
+migration-cli = { path = "sorm-examples/migration-cli" }
+migration-simple = { path = "sorm-examples/migration-simple" }
 
 surrealdb = { version = "1.5.4", features = [
-  "protocol-ws",
-  "protocol-http",
-  "kv-mem",
-  # "kv-indxdb",
-  "kv-rocksdb",
-  # "kv-tikv", 
-  # "kv-fdb",
-  "rustls",
-  "native-tls",
-  "http",
-  "scripting",
+    "protocol-ws",
+    "protocol-http",
+    "kv-mem",
+    # "kv-indxdb",
+    "kv-rocksdb",
+    # "kv-tikv",
+    # "kv-fdb",
+    "rustls",
+    "native-tls",
+    "http",
+    "scripting",
 ] }
 
 
 # Macros metapogramming lib
-syn = { version = "2.0.70", features = ["full","extra-traits", "fold", "test" ,"visit", "visit-mut"] }
+syn = { version = "2.0.70", features = ["full", "extra-traits", "fold", "test", "visit", "visit-mut"] }
 quote = "1.0.36"
 darling = "0.20.10"
 proc-macro2 = "1.0.86"

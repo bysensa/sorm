@@ -1,0 +1,5 @@
+---
+source: sorm-tests/tests/query_relate.rs
+expression: result
+---
+[]
